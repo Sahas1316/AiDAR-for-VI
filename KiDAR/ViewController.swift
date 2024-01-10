@@ -176,7 +176,7 @@ class ViewController: UIViewController, ARSCNViewDelegate, AVCaptureVideoDataOut
     
     //Access GPT API for description
     func sendImageToChatGPT(base64String: String, completion: @escaping (String?) -> Void) {
-        let apiKey = "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"
+        let apiKey = "YOUR API KEY" //Put your API key here
         let url = URL(string: "https://api.openai.com/v1/chat/completions")!
         
         var request = URLRequest(url: url)
